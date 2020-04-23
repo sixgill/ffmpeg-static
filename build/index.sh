@@ -70,7 +70,7 @@ $tar_exec -x -f linux-arm64.tar.xz --ignore-case --wildcards -O '**/readme.txt' 
 
 echo 'darwin x64'
 echo '  downloading from evermeet.cx'
-download "https://evermeet.cx/ffmpeg/getrelease" darwin-x64-ffmpeg.7z
+download "https://evermeet.cx/pub/macosx/.appstore/ffmpeg-4.2.2.7z" darwin-x64-ffmpeg.7z
 echo '  extracting'
 7zr e -y -bd -o../bin darwin-x64-ffmpeg.7z >/dev/null
 mv ../bin/ffmpeg ../bin/darwin-x64

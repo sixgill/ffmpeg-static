@@ -112,7 +112,12 @@ const release = (
   process.env.FFMPEG_BINARY_RELEASE ||
   pkg['ffmpeg-static'].binary_release
 )
-const downloadUrl = `https://github.com/eugeneware/ffmpeg-static/releases/download/${release}/${os.platform()}-${os.arch()}`
+let downloadUrl = `https://github.com/eugeneware/ffmpeg-static/releases/download/${release}/${os.platform()}-${os.arch()}`
+
+if (os.platform() === 'darwin') {
+ downloadUrl = `https://storage.googleapis.com/ffmpeg-static/${os.platform()}-${os.arch()}`
+}
+
 const readmeUrl = `${downloadUrl}.README`
 const licenseUrl = `${downloadUrl}.LICENSE`
 
