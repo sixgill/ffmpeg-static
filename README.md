@@ -1,5 +1,7 @@
 # ffmpeg-static
 
+# Temporary fork to mitigate app store rejection for Secure Transport private api used in ffmpeg
+
 **[ffmpeg](https://ffmpeg.org) static binaries for Mac OSX and Linux and Windows.**
 
 Supports macOS (64-bit), Linux (32 and 64-bit, armhf, arm64) and Windows (32 and 64-bit). [The ffmpeg version currently used is `4.2.2`.](https://github.com/eugeneware/ffmpeg-static/releases/tag/b4.2.2)
